@@ -6,7 +6,6 @@ import {
     useEffect
 } from "react";
 import { db, TDay, TGoal } from "../db";
-import { dayInMilliseconds } from "../constants";
 type TGoalsContext = {
     goals: TGoal[]
 }
