@@ -1,0 +1,29 @@
+@import "../../root.css";
+
+#goals .goals {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+#goals .goals  .goal{
+    border-radius: 10px;
+    border: 1px solid var(--background-light);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#goals .goals .goal .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+#goals .goals .goal .header .progress {
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    transition: 1s;
+    height: 100%;
+    background-color: var(--primary);
+}

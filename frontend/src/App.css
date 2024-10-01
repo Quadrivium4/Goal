@@ -1,0 +1,30 @@
+@import "./root.css";
+.page {
+    padding: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 5px;
+}
+#message {
+    padding: 10px 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: 1s;
+}
+#message.success{
+    background-color: rgba(1, 109, 1, 0.9);
+}
+#message.warning{
+    background-color: rgba(226, 203, 0, 0.9);
+}
+#message.error {
+    background-color:  rgba(179, 0, 0, 0.9);
+}
+#message.hidden {
+        transform: translateY(-100%);
+        transition-duration: 1s;
+}
